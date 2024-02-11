@@ -15,7 +15,14 @@ const dummy_meetups=[
         image:'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/1200px-Stadtbild_M%C3%BCnchen.jpg',
         address:'some address 10,12345 some city',
         description:'This is a second meetup'
-    }
+    },
+    {
+      id:'m3',
+      title:'A Third Meetup',
+      image:'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/1200px-Stadtbild_M%C3%BCnchen.jpg',
+      address:'some address 15,12345 some city',
+      description:'This is a Third meetup'
+  }
 ]
 
 function MeetupDetails(props) {
