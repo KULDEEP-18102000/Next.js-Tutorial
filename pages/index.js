@@ -1,5 +1,5 @@
 import MeetupList from "../components/meetups/MeetupList"
-import Layout from "../components/layout/Layout"
+import axios from "axios"
 
 const dummy_meetups=[
     {
@@ -49,9 +49,20 @@ const HomePage=(props)=>{
 // }
 
 export async function getStaticProps(){
+    const response=await axios.get('http://localhost:3000/api/get-meetups')
+    console.log(response)
+
+    // const response=await fetch('/api/get-meetups',{
+    //     method:'GET',
+        
+    //     headers:{
+    //         'Content-Type':'application/json'
+    //     }
+    // })
+    // const data=await response.json()
     return{
         props:{
-            meetups:dummy_meetups
+            meetups:response.data
         },
         revalidate:1
     }
