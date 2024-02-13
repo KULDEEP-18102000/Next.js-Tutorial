@@ -4,5 +4,8 @@
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
   "/api/get-meetups": "pages/api/get-meetups.js",
-  "/new-meetup": "pages/new-meetup.js"
+  "/new-meetup": "pages/new-meetup.js",
+  "/api/new-meetup-insert": "pages/api/new-meetup-insert.js",
+  "/[meetupId]": "pages/[meetupId].js",
+  "/api/get-meetup": "pages/api/get-meetup.js"
 }

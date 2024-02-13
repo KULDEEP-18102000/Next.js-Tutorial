@@ -29,15 +29,17 @@ function MeetupDetails(props) {
 
     const meetup=dummy_meetups.find((meetup)=>{return meetup.id==props.id})
 
+    console.log(props)
+
   return (
     <li className={classes.item}>
       <Card>
         <div className={classes.image}>
-          <img src={meetup.image} alt={meetup.title} />
+          <img src={props.meetup.image} alt={props.meetup.title} />
         </div>
         <div className={classes.content}>
-          <h3>{meetup.title}</h3>
-          <address>{meetup.address}</address>
+          <h3>{props.meetup.title}</h3>
+          <address>{props.meetup.address}</address>
         </div>
       </Card>
     </li>

@@ -4,6 +4,7 @@ import Card from '../ui/Card';
 import classes from './NewMeetupForm.module.css';
 
 function NewMeetupForm(props) {
+  const idInputRef=useRef()
   const titleInputRef = useRef();
   const imageInputRef = useRef();
   const addressInputRef = useRef();
@@ -12,7 +13,7 @@ function NewMeetupForm(props) {
   function submitHandler(event) {
     event.preventDefault();
 
-    
+    const enteredID=idInputRef.current.value
     const enteredTitle = titleInputRef.current.value;
     const enteredImage = imageInputRef.current.value;
     const enteredAddress = addressInputRef.current.value;
@@ -20,6 +21,7 @@ function NewMeetupForm(props) {
 
     const meetupData = {
      
+      meetupID:enteredID,
       title: enteredTitle,
       image: enteredImage,
       address: enteredAddress,
@@ -33,6 +35,10 @@ function NewMeetupForm(props) {
     <Card>
       <form className={classes.form} onSubmit={submitHandler}>
       
+      <div className={classes.control}>
+          <label htmlFor='id'>Meetup ID</label>
+          <input type='text' required id='id' ref={idInputRef} />
+        </div>
         <div className={classes.control}>
           <label htmlFor='title'>Meetup Title</label>
           <input type='text' required id='title' ref={titleInputRef} />
