@@ -1,5 +1,7 @@
 import MeetupList from "../components/meetups/MeetupList"
 import axios from "axios"
+import Head from "next/head"
+import { Fragment } from "react"
 
 const dummy_meetups=[
     {
@@ -30,8 +32,17 @@ const HomePage=(props)=>{
     // console.log(props)
     return(
         <>
+        <Fragment>
+            <Head>
+                <title>React Meetups</title>
+                <meta
+                name="description"
+                content="Browsw a hige list of react mertups"
+                />
+            </Head>
         <h1>Welcome to HomePage</h1>
         <MeetupList meetups={props.meetups}/>
+        </Fragment>
         </>
     )
 }

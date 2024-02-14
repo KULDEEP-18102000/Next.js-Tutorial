@@ -2,10 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/api/get-meetups": "pages/api/get-meetups.js",
   "/new-meetup": "pages/new-meetup.js",
-  "/api/new-meetup-insert": "pages/api/new-meetup-insert.js",
+  "/": "pages/index.js",
   "/[meetupId]": "pages/[meetupId].js",
-  "/api/get-meetup": "pages/api/get-meetup.js"
+  "/api/get-meetups": "pages/api/get-meetups.js"
 }
