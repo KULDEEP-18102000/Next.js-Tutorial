@@ -10,6 +10,7 @@ async function handler(req,res){
     
             const todosCollection= db.collection('todos')
     
+            //retrieving todos from database
             const result=await todosCollection.find({markAsDone:false}).toArray()
             // console.log(result)
     

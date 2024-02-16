@@ -10,6 +10,7 @@ async function handler(req,res){
     
             const todosCollection= db.collection('todos')
     
+            //saving into database
             const result=await todosCollection.insertOne(data)
             console.log(result)
     
