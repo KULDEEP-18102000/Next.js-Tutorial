@@ -10,6 +10,7 @@ async function handler(req,res){
     
             const todosCollection= db.collection('todos')
     
+            //deleting the todo from collection
             const result=await todosCollection.findOneAndDelete({_id:new ObjectId(req.body.id)})
             // console.log(result)
     

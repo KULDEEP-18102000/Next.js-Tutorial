@@ -23,6 +23,7 @@ const TodoList=(props)=>{
         console.log(data)
     }
 
+    //removing todo from list
     const deleteTodoHandler=async(id)=>{
         console.log(id)
         const response=await fetch('/api/deleteTodo',{
