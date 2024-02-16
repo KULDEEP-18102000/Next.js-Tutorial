@@ -1,0 +1,9 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/today": "pages/today.js",
+  "/api/deleteTodo": "pages/api/deleteTodo.js",
+  "/api/insertTodo": "pages/api/insertTodo.js",
+  "/api/getTodos": "pages/api/getTodos.js"
+}
