@@ -10,7 +10,7 @@ async function handler(req,res){
     
             const todosCollection= db.collection('todos')
 
-            //changing the todo status
+            //Editing the todo status
             const result = await todosCollection.updateOne({_id: new ObjectId(req.body.id)}, { $set: {markAsDone:true} })
     
             // const result=await todosCollection.insertOne(data)

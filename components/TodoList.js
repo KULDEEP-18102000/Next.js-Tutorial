@@ -8,6 +8,7 @@ const TodoList=(props)=>{
 
     console.log(props)
 
+    //Editing the todo status
     const markAsDoneHandler=async(id)=>{
         console.log(id)
         const response=await fetch('/api/markDone',{
