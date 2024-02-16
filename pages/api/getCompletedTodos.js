@@ -10,6 +10,7 @@ async function handler(req,res){
     
             const todosCollection= db.collection('todos')
     
+            //getting all the completed tasks
             const result=await todosCollection.find({markAsDone:true}).toArray()
             // console.log(result)
     
